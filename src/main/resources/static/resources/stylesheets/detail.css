@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+.goodsCard {
+    align-items: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.goodsCard > .goodsPhotoArea {
+
+}
+.goodsCard > .goodsPhotoArea > .goodsPhoto {
+    width: 400px;
+    height: 490px;
+}
+.goodsCard > .goodsDetail {
+    margin-left: 60px;
+    width: 100%;
+
+}
+.goodsCard > .goodsDetail > .goodsName {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.goodsCard > .goodsDetail > .firstPrice {
+    margin: 0;
+    font-size: 44px;
+    border-bottom: 1px solid #96f2d7;
+    padding-bottom: 15px;
+}
+.goodsCard > .goodsDetail > .timeRemaining {
+    padding-top: 10px;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 25px;
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsBox {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    margin-top: 30px;
+
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsBox > .goodsBoxFr {
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsBox > .goodsBoxSe {
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsPick {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 80px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsPick > .pick {
+    width: 29%;
+    height: 100%;
+    font-weight: 600;
+    border: none;
+    background: #676464;
+    color: #96f2d7;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 24px;
+}
+.goodsCard > .goodsDetail > .goodsPro > .goodsPick > .pick > .pickCount {
+    padding-left: 10px;
+}
+.auction {
+    font-size: 45px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #96f2d7;
+
+}
+.auction > .nowPrice  {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.auction > .nowPrice > .auctionPrice {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.auction > .hpPrice  {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.auction > .hpPrice > .auctionHopePrice {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: orangered;
+}
+.auction > .hpPrice > .hopeText {
+    width: 250px ;
+    background: transparent;
+    border: none;
+    border-bottom: #96f2d7 solid 1px;
+    outline: none;
+    font-size: 30px;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 25px;
+}
+
+.auction > #hopeAuction {
+    padding-left: 15px;
+}
+.auction >.auctionHopePrice {
+    color: red;
+}
+
+

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO - 간편한 중고 경매를 찾다</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/home.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/detail.css}">
+    <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
+</head>
+<body>
+<header id="headLine">
+    <div class="logo">
+        <a th:href="@{/static}">
+            <img th:src="@{/images/logo.png}" alt="">
+        </a>
+    </div>
+</header>
+<div>
+    <div class="goodsCard">
+        <div class="goodsPhotoArea">
+            <img class="goodsPhoto" th:src="@{/images/hyuk.jpeg}">
+        </div>
+        <div class="goodsDetail">
+            <div class="goodsName">
+                김재혁입니다.
+            </div>
+            <div class="firstPrice">
+                300,000 원
+            </div>
+            <div class="timeRemaining">
+                2일 12:20:39
+            </div>
+            <div class="goodsPro">
+                <div class="goodsBox">
+                    <div class="goodsBoxFr">상품 분류   </div>
+                    <div class="goodsBoxSe">사람</div>
+                </div>
+                <div class="goodsBox">
+                    <div class="goodsBoxFr">상품 상태   </div>
+                    <div class="goodsBoxSe">중고</div>
+                </div>
+                <div class="goodsBox">
+                    <div class="goodsBoxFr">배송비    </div>
+                    <div class="goodsBoxSe">무료</div>
+                </div>
+                <div class="goodsBox">
+                    <div class="goodsBoxFr">즉시 구매가   </div>
+                    <div class="goodsBoxSe">25,000,000 원</div>
+                </div>
+                <div class="goodsPick">
+                    <button id="pickButton" class="pick">
+                        찜하기
+                        <div class="pickCount">24</div>
+                    </button>
+                    <button id="buyNowBtn" class="pick">
+                        즉시구매
+                    </button>
+                    <button id="=auctionBtn" class="pick">
+                        입찰하기
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="auction">
+        <div class="nowPrice">
+            <span>현재 입찰가</span> <div class="auctionPrice">300,000 </div>원
+        </div>
+        <div class="hpPrice">
+            <span id="hopeAuction">희망 입찰가</span> <input type="text" class="hopeText" placeholder="금액을 입력해주세요" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+
+        </div>
+    </div>
+
+</div>
+<footer>
+    푸터푸터
+</footer>
+</body>
+</html>
