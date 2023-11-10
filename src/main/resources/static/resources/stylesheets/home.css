@@ -5,3 +5,60 @@
 html {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6F1F1;
+    box-sizing: border-box;
+    color: #000000;
+    padding: 0 10rem;
+    min-width: 1500px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header, div, footer {
+    border: 0.0125rem solid;
+}
+
+#headLine {
+    width: 100%;
+    padding-bottom: 0.25rem;
+
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#headLine > .logo {
+    box-sizing: border-box;
+    width: 100%;
+    height: 5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#headLine > .logo > a {
+    min-width: 9rem;
+    height: 100%;
+    transform: translateY(-2.5%);
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#headLine > .logo > a > img {
+    height: 10rem;
+}
