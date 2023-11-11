@@ -1,39 +1,10 @@
-header, div, footer {
-    border: 0.0125rem solid;
+@charset "UTF-8";
+
+#mainDiv {
+    height: 100vh;
+
 }
 
-#headLine {
-    width: 100%;
-    padding-bottom: 0.25rem;
+#mainDiv > .productList {
 
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-#headLine > .logo {
-    box-sizing: border-box;
-    /*width: 100%;*/
-    height: 5rem;
-
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-#headLine > .logo > a {
-    min-width: 9rem;
-    height: 100%;
-    transform: translateY(-2.5%);
-
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#headLine > .logo > a > img {
-    height: 10rem;
 }
