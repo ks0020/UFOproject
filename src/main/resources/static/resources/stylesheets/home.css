@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 
 header, div, footer {
-    /*border: 0.0125rem solid;*/
+    border: 0.0125rem solid;
 }
 
 #headLine {
