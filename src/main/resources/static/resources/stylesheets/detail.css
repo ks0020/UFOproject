@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
-
+#mainDiv {
+}
 .goodsCard {
     align-items: normal;
     display: flex;
@@ -16,7 +17,7 @@
 
 }
 .goodsCard > .goodsPhotoArea > .goodsPhoto {
-    width: 400px;
+    width: 450px;
     height: 490px;
 }
 .goodsCard > .goodsDetail {
@@ -93,9 +94,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #96f2d7;
-
+    padding-bottom: 75px;
 }
 .auction > .nowPrice  {
     align-items: center;
@@ -135,6 +134,22 @@
 }
 .auction >.auctionHopePrice {
     color: red;
+}
+.goodsInfo {
+    border-top: 2px solid #96f2d7;
+    border-right : 1px solid #96f2d7;
+
+}
+.goodsInfo > .goodsInfoTitle {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    border-bottom: solid 1px rgba(150, 242, 215, 0.83);
+    font-size: 25px;
+}
+.goodsInfo > .goodsInfoText > .goodsInfoPicture {
+    width: 33%;
+    height: 50%;
+    padding-bottom: 40px;
 }
 
 

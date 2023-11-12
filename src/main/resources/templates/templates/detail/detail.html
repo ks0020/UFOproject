@@ -56,14 +56,14 @@
 <div id="mainDiv">
     <div class="goodsCard">
         <div class="goodsPhotoArea">
-            <img class="goodsPhoto" th:src="@{/images/hyuk.jpeg}">
+            <img class="goodsPhoto" th:src="@{/images/macbook.jpeg}">
         </div>
         <div class="goodsDetail">
             <div class="goodsName">
-                김재혁입니다.
+                맥북 에어 입니다.
             </div>
             <div class="firstPrice">
-                300,000 원
+                3,000,000 원
             </div>
             <div class="timeRemaining">
                 2일 12:20:39
@@ -71,7 +71,7 @@
             <div class="goodsPro">
                 <div class="goodsBox">
                     <div class="goodsBoxFr">상품 분류   </div>
-                    <div class="goodsBoxSe">사람</div>
+                    <div class="goodsBoxSe">가전</div>
                 </div>
                 <div class="goodsBox">
                     <div class="goodsBoxFr">상품 상태   </div>
@@ -103,11 +103,28 @@
     </div>
     <div class="auction">
         <div class="nowPrice">
-            <span>현재 입찰가</span> <div class="auctionPrice">300,000 </div>원
+            <span>현재 입찰가</span> <div class="auctionPrice">3,000,000 </div>원
         </div>
         <div class="hpPrice">
             <span id="hopeAuction">희망 입찰가</span> <input type="text" class="hopeText" placeholder="금액을 입력해주세요" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
 
+        </div>
+    </div>
+    <div class="goodsInfo">
+        <div class="goodsInfoTitle">
+            상품정보
+        </div>
+        <div class="goodsInfoText">
+            <p>
+                실제로 사용한 맥북 에어 모델입니다.
+                사용감은 좀 있지만 제가 사용한 점에서
+                비싼 가격에 올렸습니다.
+                에누리 X , 쿨거 환영
+            </p>
+                <img class="goodsInfoPicture" th:src="@{/images/macbook.jpeg}">
+                <img class="goodsInfoPicture" th:src="@{/images/macbook.jpeg}">
+                <img class="goodsInfoPicture" th:src="@{/images/macbook.jpeg}">
+                <img class="goodsInfoPicture" th:src="@{/images/macbook.jpeg}">
         </div>
     </div>
 
