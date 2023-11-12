@@ -1,4 +1,6 @@
 const registerForm = document.getElementById('registerForm');
+const step_1 = document.querySelector('.step-1');
+const step_2 = document.querySelector('.step-2');
 let agreeChk = registerForm.querySelectorAll('input[name=agree]');
 
 registerForm['checkAll'].addEventListener('change', e => {
@@ -24,5 +26,12 @@ function updateNextButtonState() {
     registerForm['next'].style.color = isChecked ? 'black' : '';
     registerForm['next'].style.cursor = isChecked ? 'pointer' : '';
 } //필수사항을 체크했거나 모두 동의 했을때
+
+registerForm['next'].addEventListener('click', e=> {
+    e.preventDefault();
+    step_1.style.display = 'none';
+    step_2.style.display = 'block';
+});
+
 
 
