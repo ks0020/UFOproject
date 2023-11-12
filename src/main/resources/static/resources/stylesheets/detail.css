@@ -208,8 +208,11 @@
 .sellerInfo > .sellerCard > .sellerPro > .sellerProduct {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 50px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 130px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
 
 
 }
@@ -221,8 +224,8 @@
     font-size: 25px;
     margin-left: 15px;
 }
-.sellerCard > .sellerReview {
-
+.sellerInfo >.sellerCard > .sellerReview {
+    width: 40%;
 }
 .sellerCard > .sellerReview > .reviewTitle {
     font-size: 24px;
