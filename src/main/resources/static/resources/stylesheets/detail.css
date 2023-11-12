@@ -137,19 +137,103 @@
 }
 .goodsInfo {
     border-top: 2px solid #96f2d7;
-    border-right : 1px solid #96f2d7;
+    border-right : 2px solid #96f2d7;
 
 }
 .goodsInfo > .goodsInfoTitle {
     padding-top: 60px;
     padding-bottom: 90px;
     border-bottom: solid 1px rgba(150, 242, 215, 0.83);
-    font-size: 25px;
+    font-size: 30px;
 }
-.goodsInfo > .goodsInfoText > .goodsInfoPicture {
-    width: 33%;
-    height: 50%;
+.goodsInfo > .goodsInfoText > p {
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.goodsInfo > .goodsInfoText > .goodsInfoPic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: #96f2d7 solid 1px;
+}
+.goodsInfo > .goodsInfoText > .goodsInfoPic > .goodsInfoPicture {
+    width: 90%;
+    height: 90%;
     padding-bottom: 40px;
 }
+.sellerInfo {
+
+}
+.sellerInfo > .sellerTitle {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 30px;
+
+}
+.sellerInfo > .sellerCard {
+    /*align-items: center;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid rgb(238, 238, 238);
+    margin-bottom: 55px;
+}
+.sellerInfo > .sellerCard > .sellerIntro {
+    text-align: center;
+    padding: 20px;
+    border-right: solid 1px rgb(136, 136, 136);
+    color: rgb(136, 136, 136);
+
+
+}
+.sellerInfo > .sellerCard > .sellerIntro > .seller {
+    padding-bottom: 30px;
+}
+.sellerInfo > .sellerCard > .sellerIntro > .seller > a {
+    font-size: 24px;
+    padding-bottom: 15px;
+
+}
+.sellerInfo > .sellerCard > .sellerIntro > .sellerPic {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.sellerInfo > .sellerCard > .sellerIntro > .sellerPic > .sellerPicture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+.sellerInfo > .sellerCard > .sellerPro > .sellerProduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 60px;
+
+
+}
+.sellerInfo > .sellerCard >.sellerPro >  .sellerProduct > .sellThing {
+    width: 200px;
+    height: 200px;
+}
+.sellerInfo > .sellerCard >.sellerPro > a {
+    font-size: 25px;
+    margin-left: 15px;
+}
+.sellerCard > .sellerReview {
+
+}
+.sellerCard > .sellerReview > .reviewTitle {
+    font-size: 24px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+.sellerCard > .sellerReview > .reviewSpace {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    color: rgb(136, 136, 136);
+    margin-bottom: 15px;
+}
+
 
 
