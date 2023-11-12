@@ -24,11 +24,12 @@
 </header>
 <form id="registerForm">
     <div class="inner">
+        <h1>회원가입</h1>
         <main class="step-1">
-            <h1>회원가입</h1>
             <h2><input class="check_box" type="checkbox" name="checkAll">전체동의하기</h2>
             <span>실명 인증된 아이디로 가입, 위치기반서비스 이용약관(선택), 이벤트・혜택 정보 수신(선택) 동의를 포함합니다.</span>
-            <h2><input class="check_box" type="checkbox" name="agree" data-required="true"><span>[필수]</span>회원가입 이용약관</h2>
+            <h2><input class="check_box" type="checkbox" name="agree" data-required="true"><span>[필수]</span>회원가입 이용약관
+            </h2>
             <textarea class="term_box" readonly>여러분을 환영합니다.
 네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
 
@@ -130,7 +131,8 @@
 
 주요 사항을 잘 안내하고 여러분의 소중한 의견에 귀 기울이겠습니다.
 네이버는 서비스 이용에 필요한 주요사항을 적시에 잘 안내해 드릴 수 있도록 힘쓰겠습니다. 회원에게 통지를 하는 경우 전자메일, 서비스 내 알림 또는 기타 적절한 전자적 수단을 통해 개별적으로 알려 드릴 것이며, 다만 회원 전체에 대한 통지가 필요할 경우엔 7일 이상 www.naver.com을 비롯한 네이버 도메인의 웹사이트 및 응용프로그램(어플리케이션, 앱) 초기 화면 또는 공지사항 등에 관련 내용을 게시하도록 하겠습니다.</textarea>
-            <h2><input class="check_box" type="checkbox" name="agree" data-required="true"><span>[필수]</span>개인정보 수집 및 이용</h2>
+            <h2><input class="check_box" type="checkbox" name="agree" data-required="true"><span>[필수]</span>개인정보 수집 및 이용
+            </h2>
             <textarea class="term_box" readonly>개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
 
 1. 수집하는 개인정보
@@ -268,10 +270,85 @@ QR코드 등록 정보:삭제 시점으로부터6개월 보관
             <h2><input class="check_box" type="checkbox" name="agree"><span>[선택]</span>실명 인증된 아이디로 가입</h2>
             <textarea class="term_box small" readonly>실명 인증된 아이디로 가입하시면 본인인증이 필요한 서비스(네이버 페이, 쇼핑, 멤버십 등)를 가입 후 바로 이용하실 수 있어요.</textarea>
             <div>
-                <button disabled  name="next" class="button" type="submit">다음</button>
+                <button disabled name="next" class="button" type="submit">다음</button>
             </div>
         </main>
         <main class="step-2">
+            <div class="form_list">
+                <div class="form_item">
+                    <img th:src="@{/images/registerImages/email.png}" class="img">
+                    <input type="email" class="input" name="email" placeholder="이메일">
+                    <input type="button" class="check" name="check_email" value="중복 검사">
+                </div>
+                <div class="form_item">
+                    <input type="text" class="input nickname" placeholder="별명(2글자 이상 8글자 이하 영어 대소문자,한글)"
+                           maxlength="8" name="nickname">
+                    <img th:src="@{/images/registerImages/nickname.png}" alt="x" class="img">
+                    <input type="button" class="check" name="check_email" value="중복 검사">
+
+
+                </div>
+                <div class="form_item">
+                    <input type="password" class="input" placeholder="비밀번호" name="password">
+                    <img th:src="@{/images/registerImages/lock.png}" alt="x" class="img">
+                </div>
+                <div class="form_item">
+                    <input type="password" class="input" placeholder="비밀번호 재입력" name="passwordCheck">
+                    <img th:src="@{/images/registerImages/lock_check.png}" alt="x" class="img">
+                </div>
+            </div>
+
+            <div class="form_list">
+                <div class="form_item name">
+                    <div class="input-wrapper">
+                        <input type="text" class="input" placeholder="이름" maxlength="5" name="name">
+                        <img th:src="@{/images/registerImages/user.png}" alt="x" class="img">
+                    </div>
+                </div>
+                <div class="form_item">
+                    <input type="date" class="input" name="birth">
+                </div>
+
+                <div class="form_item">
+                    <input type="radio" name="gender" id="gender1" value="M">
+                    <label for="gender1">남자</label>
+                    <input type="radio" name="gender" id="gender2" value="F">
+                    <label for="gender2">여자</label>
+                </div>
+            </div>
+
+
+            <div class="form_list">
+                <div class="form_item addressFirst">
+                    <input readonly type="text" class="input" name="addressPostal" placeholder="우편번호">
+                    <input type="button" class="check" name="addressFind" value="우편번호 찾기">
+                </div>
+                <div class="form_item addressSecond">
+                    <input readonly class="input addressPrimary" maxlength="100" name="addressPrimary"
+                           placeholder="'우편번호 찾기' 버튼을 클릭하여 주소를 지정해 주세요." type="text">
+                </div>
+                <div class="form_item addressThird">
+                    <input class="input addressSecondary" maxlength="100" name="addressSecondary"
+                           placeholder="상세 주소를 입력해 주세요. (건물 이름 및 동, 호 등)" type="text">
+                </div>
+            </div>
+
+            <div class="form_list">
+                <div class="form_item">
+                    <input type="text" class="input contact" maxlength="12" name="contact"
+                           placeholder="연락처 ('-' 없이 입력)">
+                    <input type="button" class="check contactVerify btn" name="contactSend" value="인증번호 전송">
+                </div>
+                <div class="form_item">
+                    <input disabled class="input" maxlength="6" name="contactCode" placeholder="인증번호" type="text">
+                    <input disabled class="contactVerify btn" name="contactVerify" type="button" value="인증번호 확인">
+                </div>
+                <input hidden name="contactSalt" type="hidden">
+            </div>
+
+            <div class="button-container">
+                <input disabled class="_object-button  button complete" type="submit" value="완료">
+            </div>
         </main>
     </div>
 </form>
