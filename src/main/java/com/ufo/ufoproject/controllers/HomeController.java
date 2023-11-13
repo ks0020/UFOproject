@@ -16,4 +16,12 @@ public class HomeController {
         ModelAndView modelAndView = new ModelAndView("templates/home/home");
         return modelAndView;
     }
+
+    @RequestMapping(value = "/mypage",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public ModelAndView getMyPage() {
+        ModelAndView modelAndView = new ModelAndView("templates/user/mypage");
+        return modelAndView;
+    }
 }

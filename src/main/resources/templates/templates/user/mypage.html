@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO - 간편한 중고 경매를 찾다</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage.css}">
+    <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
+</head>
+<body>
+<header id="headLine">
+    <div class="logoDiv">
+        <div class="logo">
+            <a th:href="@{/}">
+                <img th:src="@{/images/logo.png}" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <label>
+                <div>
+                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/ff0000/search--v1.png" alt="search--v1"/>
+                </div>
+                <input id="searchContent" type="text" placeholder="검색">
+            </label>
+        </div>
+        <div class="info_menu" >
+            <a th:if="${session.user != null}" class="nickname" href="">
+                <span>닉네임</span>
+            </a>
+            <span th:if="${session.user != null}"> 님</span>
+            <a th:if="${session.user == null}" th:href="@{/user/login}">
+                <img th:src="@{/images/account.png}" alt="">
+            </a>
+            <a th:if="${session.user != null}" class="logout" href="#">로그아웃</a>
+            <a th:if="${session.user != null}" th:href="@{/mypage/modify}">마이페이지</a>
+            <a th:href="@{/chat}">
+                <img th:src="@{/images/chat.png}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="categoryDiv">
+        <ul>
+            <li>의류</li>
+            <li>악세사리</li>
+            <li>IT</li>
+            <li>취미</li>
+            <li>가전용품</li>
+            <li>반려동물</li>
+        </ul>
+    </div>
+</header>
+<div id="mainDiv">
+    <div class="profile">
+        <div class="profileAndInformation">
+            <div class="profile">
+                <label>
+                    <input type="button">
+                    <img th:src="@{/images/account.png}" alt="">
+                </label>
+                <div class="img_modify visible">
+                    프로필 사진 수정
+                </div>
+                <div>
+                    닉네임
+<!--                    <span th:text="${session.user['nickname']}"></span>-->
+                </div>
+                <div class="modify_Btn">
+                    <label>
+                        <input type="button">
+                        <span>개인 정보 수정</span>
+                    </label>
+                </div>
+                <div class="information_modify visible">
+                    프로필 사진 수정
+                </div>
+            </div>
+            <div>
+                개인정보가 들어가겠죠?
+                <div>
+                    <div>닉네임 들어가겠죠?</div>
+                    <div>닉네임 변경칸</div>
+                </div>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <div>
+                    소개칸
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>내 상품</li>
+            <li>내 상품 후기</li>
+            <li>찜 목록</li>
+            <li>팔로잉</li>
+            <li>팔로워</li>
+        </ul>
+    </div>
+    <div>
+        메뉴별 게시판
+    </div>
+</div>
+<footer id="footer">
+    <div class="members">
+        <div class="sub_logo">
+            <img th:src="@{/images/favicon.png}" alt="">
+            <span>개발자들</span>
+        </div>
+        <div class="hyuk">
+            <div>
+                <span> 김 재혁 </span>
+                <div class="face">
+                    <img th:src="@{/images/hyuk.jpeg}" alt="">
+                </div>
+            </div>
+            <div class="etc">
+                <span> 깃 허브 </span>
+                <a href="https://github.com/HYUK0802" target="_blank">
+                    <img th:src="@{/images/github.png}" alt="">
+                </a>
+                <span> 개발 블로그 </span>
+                <a href="https://velog.io/@tig05205" target="_blank">
+                    <img th:src="@{/images/velog.png}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="bum">
+            <div>
+                <span> 김 민범 </span>
+                <div class="face">
+                    <img th:src="@{/images/bum.jpg}" alt="">
+                </div>
+            </div>
+            <div class="etc">
+                <span> 깃 허브 </span>
+                <a href="https://github.com/ks0020" target="_blank">
+                    <img th:src="@{/images/github.png}" alt="">
+                </a>
+                <span> 개발 블로그 </span>
+                <a href="https://velog.io/@tig05205" target="_blank">
+                    <img th:src="@{/images/velog.png}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="min">
+            <div>
+                <span> 이 석민 </span>
+                <div class="face">
+                    <img th:src="@{/images/min.jpg}" alt="">
+                </div>
+            </div>
+            <div class="etc">
+                <span> 깃 허브 </span>
+                <a href="https://github.com/ks0020" target="_blank">
+                    <img th:src="@{/images/github.png}" alt="">
+                </a>
+                <span> 개발 블로그 </span>
+                <a href="https://velog.io/@ks0020" target="_blank">
+                    <img th:src="@{/images/velog.png}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

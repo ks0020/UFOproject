@@ -1,0 +1,50 @@
+#mainDiv > .profile {
+    margin-bottom: 1.875rem;
+}
+
+#mainDiv > .profile > .profileAndInformation {
+    display: flex;
+    width: 100%;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile {
+    width: 20rem;
+    height: 20rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url("../images/home/basics.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > div {
+    margin-top: 1rem;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > label > input {
+    display: none;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > label > img {
+    cursor: pointer;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > .modify_Btn > label {
+    cursor: pointer;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > .modify_Btn > label > span {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.125rem solid #96f2d7;
+    padding: 0.6rem 1.5rem;
+    text-decoration-color: #96f2d7;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > .modify_Btn > label > input {
+    display: none;
+}

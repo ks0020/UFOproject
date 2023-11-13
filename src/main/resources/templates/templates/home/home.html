@@ -9,7 +9,7 @@
     <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
     <link rel="stylesheet" th:href="@{/resources/stylesheets/home.css}">
     <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
-    <script defer th:src="@{/scripts/base.js}"></script>
+    <script defer th:src="@{/scripts/home.js}"></script>
 </head>
 
 <body>
@@ -30,14 +30,14 @@
         </div>
         <div class="info_menu" >
             <a th:if="${session.user != null}" class="nickname" href="">
-                <span>닉네임</span>
+                <span th:text="${session.user['nickname']}"></span>
             </a>
             <span th:if="${session.user != null}"> 님</span>
             <a th:if="${session.user == null}" th:href="@{/user/login}">
                 <img th:src="@{/images/account.png}" alt="">
             </a>
             <a th:if="${session.user != null}" class="logout" href="#">로그아웃</a>
-            <a th:if="${session.user != null}" th:href="@{/mypage/modify}">마이페이지</a>
+            <a th:if="${session.user != null}" th:href="@{/mypage}">마이페이지</a>
             <a th:href="@{/chat}">
                 <img th:src="@{/images/chat.png}" alt="">
             </a>
