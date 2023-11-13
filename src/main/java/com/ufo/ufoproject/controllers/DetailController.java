@@ -16,4 +16,12 @@ public class DetailController {
         ModelAndView modelAndView = new ModelAndView("templates/detail/detail");
         return modelAndView;
     }
+
+    @RequestMapping(value = "/productRegister",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public ModelAndView getProductRegister() {
+        ModelAndView modelAndView = new ModelAndView("templates/detail/productRegister");
+        return modelAndView;
+    }
 }
