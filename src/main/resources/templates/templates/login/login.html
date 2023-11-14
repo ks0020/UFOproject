@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/login.css}">
+    <title>로그인</title>
+</head>
+<body>
+<form id="loginForm">
+    <div class="logo">
+        <a th:href="@{/}">
+            <img th:src="@{/images/logo.png}" alt="">
+        </a>
+    </div>
+    <div class="login_container">
+        <input type="email" placeholder="이메일">
+        <input type="password" placeholder="***********">
+        <input class="login" type="submit" value="login">
+        <ul class="registerEndRecover">
+            <li><a th:href="@{/register}">회원가입</a></li>
+            <li><a th:href="@{/recover}">아이디 찾기 / 비밀번호 찾기</a></li>
+        </ul>
+    </div>
+</form>
+
+</body>
+</html>
