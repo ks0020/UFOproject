@@ -67,32 +67,41 @@
                     닉네임
 <!--                    <span th:text="${session.user['nickname']}"></span>-->
                 </div>
-                <div class="modify_Btn">
+            </div>
+            <div class="info_div">
+                <div>
+                    <span>이름 : </span>
+<!--                    <span th:text="${session.user['name']}"></span>-->
+                    <span> 관리자 </span>
+                </div>
+                <div>
+                    <span>닉네임 : </span>
+<!--                    <span th:text="${session.user['nickname']}"></span>-->
+                    <span> 어드민 </span>
+                </div>
+                <div>
+                    <span>연락처 : </span>
+<!--                    <span th:text="${session.user['contact']}"></span>  -->
+                    <span> 010-1234-5678 </span>
+                </div>
+                <div>
+                    <span>이메일 : </span>
+<!--                    <span th:text="${session.user['email']}"></span>-->
+                    <span> admin1234@sample.com </span>
+                </div>
+                <div>
+                    <span>주소 : </span>
+<!--                    <span th:text="${session.user['adress']}"></span>-->
+                    <span> 대한민국 어느도 어느시 저런동 이런번지 </span>
+                </div>
+                <div class="modify_btn">
                     <label>
                         <input type="button">
                         <span>개인 정보 수정</span>
                     </label>
-                </div>
-                <div class="information_modify visible">
-                    프로필 사진 수정
-                </div>
-            </div>
-            <div>
-                개인정보가 들어가겠죠?
-                <div>
-                    <div>닉네임 들어가겠죠?</div>
-                    <div>닉네임 변경칸</div>
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                    </ul>
-                </div>
-                <div>
-                    소개칸
+                    <div class="info_modify visible">
+                        개인 정보 수정 디브
+                    </div>
                 </div>
             </div>
         </div>

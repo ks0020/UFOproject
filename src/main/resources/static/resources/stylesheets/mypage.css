@@ -1,15 +1,18 @@
 #mainDiv > .profile {
+    border: 0.0125rem solid #96f2d7;
     margin-bottom: 1.875rem;
 }
 
 #mainDiv > .profile > .profileAndInformation {
-    display: flex;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 #mainDiv > .profile > .profileAndInformation > .profile {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
 
     align-items: center;
     display: flex;
@@ -38,13 +41,43 @@
     cursor: pointer;
 }
 
-#mainDiv > .profile > .profileAndInformation > .profile > .modify_Btn > label > span {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0.125rem solid #96f2d7;
-    padding: 0.6rem 1.5rem;
-    text-decoration-color: #96f2d7;
+#mainDiv > .profile > .profileAndInformation > .info_div {
+    width: 40rem;
+    padding: 0 1.875rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#mainDiv > .profile > .profileAndInformation > .profile > .modify_Btn > label > input {
+#mainDiv > .profile > .profileAndInformation > .info_div > div{
+    margin-top: 1rem;
+}
+
+#mainDiv > .profile > .profileAndInformation > .info_div > .nickname_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label {
+    cursor: pointer;
+}
+
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > span {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.125rem solid #96f2d7;
+    border-radius: 0.25rem;
+    padding: 0.6rem 1.5rem;
+    text-decoration-color: #96f2d7;
+
+}
+
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > input {
     display: none;
 }
