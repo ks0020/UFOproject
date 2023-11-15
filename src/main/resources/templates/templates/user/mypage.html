@@ -8,9 +8,11 @@
     <title>UFO - 간편한 중고 경매를 찾다</title>
     <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
     <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage.css}">
+    <script defer th:src="@{/scripts/base.js}"></script>
     <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
 </head>
 <body>
+<div id="cover"></div>
 <header id="headLine">
     <div class="logoDiv">
         <div class="logo">
@@ -57,11 +59,20 @@
         <div class="profileAndInformation">
             <div class="profile">
                 <label>
-                    <input type="button">
+                    <input class="modify_btn img_btn" type="button">
                     <img th:src="@{/images/account.png}" alt="">
                 </label>
-                <div class="img_modify visible">
+                <div class="img_modify modify_page">
                     프로필 사진 수정
+                    수정수정수정
+                    프로필 사진 수정
+                    수정수정수정프로필 사진 수정
+                    수정수정수정프로필 사진 수정
+                    수정수정수정프로필 사진 수정
+                    수정수정수정프로필 사진 수정
+                    수정수정수정프로필 사진 수정
+                    수정수정수정
+
                 </div>
                 <div>
                     닉네임
@@ -96,10 +107,10 @@
                 </div>
                 <div class="modify_btn">
                     <label>
-                        <input type="button">
+                        <input class="modify_btn info_btn" type="button">
                         <span>개인 정보 수정</span>
                     </label>
-                    <div class="info_modify visible">
+                    <div class="info_modify modify_page">
                         개인 정보 수정 디브
                     </div>
                 </div>

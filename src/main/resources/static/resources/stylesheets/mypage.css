@@ -1,3 +1,31 @@
+.img_modify {
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    max-height: calc(100vh - 2rem);
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0.0625rem #21212145;
+    box-sizing: border-box;
+    opacity: 0;
+    overflow: hidden auto;
+    pointer-events: none;
+    position: fixed;
+    transform: scale(95%) translate(-50%, -50%);
+    transform-origin: top left;
+    transition-duration: 250ms;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    z-index: 9999;
+}
+
+.img_modify .visible {
+    opacity: 1;
+    z-index: 10000;
+    pointer-events: all;
+    transform: scale(100%) translate(-50%, -50%);
+}
+
 #mainDiv > .profile {
     border: 0.0125rem solid #96f2d7;
     margin-bottom: 1.875rem;
@@ -80,4 +108,10 @@
 
 #mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > input {
     display: none;
+}
+
+#mainDiv > .profile > .profileAndInformation > .profile > .img_modify {
+    /*width: 20rem;*/
+    /*height: 20rem;*/
+    /*background-color: #96f2d7;*/
 }

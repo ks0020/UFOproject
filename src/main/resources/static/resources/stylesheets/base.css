@@ -6,10 +6,6 @@ html {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif
 }
 
-.visible {
-    display: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -17,7 +13,6 @@ a {
 a:visited {
     color: #000000;
 }
-
 
 a:link, a:visited {
     color: #000000;
@@ -51,6 +46,27 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#cover {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.25rem);
+    background-color: #21212160;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition-duration: 250ms;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    z-index: 10;
+}
+
+#cover.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
 #mainDiv, #footer{
     padding: 0 13rem;
 }
@@ -61,7 +77,7 @@ body::-webkit-scrollbar {
     width: 100%;
     border-bottom: 0.0125rem solid rgb(238, 238, 238);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 5;
 
     display: flex;
     flex-direction: column;
