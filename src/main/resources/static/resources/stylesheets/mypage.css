@@ -126,12 +126,11 @@
     width: 100%;
     height: 2.5rem;
 
-    border: 0.05rem solid;
+    outline: 0.125rem solid;
     cursor: pointer;
 
     align-items: center;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
 }
 
@@ -143,13 +142,14 @@
     border-radius: 0 0.5rem 0 0;
 }
 
-#mainDiv > .line {
-    width: 100%;
-
-    border-top: 0.25rem solid #96f2d7;
+#mainDiv > .mypage_menu > ul > li > a > span {
+    margin-left: 0.5rem;
+    font-size: 0.825rem;
 }
 
 #mainDiv > .board {
     width: 100%;
     height: 100%;
+
+    padding-top: 3.125rem;
 }
