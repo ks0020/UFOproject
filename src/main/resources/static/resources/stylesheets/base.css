@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
     transition-duration: 250ms;
     transition-property: opacity;
     transition-timing-function: ease;
-    z-index: 10;
+    z-index: 8;
 }
 
 #cover.visible {

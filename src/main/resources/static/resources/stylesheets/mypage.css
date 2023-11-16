@@ -1,4 +1,4 @@
-.img_modify {
+.modify_page {
     top: 50%;
     left: 50%;
     width: 25rem;
@@ -10,18 +10,18 @@
     opacity: 0;
     overflow: hidden auto;
     pointer-events: none;
-    position: fixed;
+    position: absolute;
     transform: scale(95%) translate(-50%, -50%);
     transform-origin: top left;
     transition-duration: 250ms;
     transition-property: opacity, transform;
     transition-timing-function: ease;
-    z-index: 9999;
+    z-index: 9;
 }
 
-.img_modify .visible {
+.modify_page .visible {
     opacity: 1;
-    z-index: 10000;
+    z-index: 10;
     pointer-events: all;
     transform: scale(100%) translate(-50%, -50%);
 }
@@ -110,8 +110,46 @@
     display: none;
 }
 
-#mainDiv > .profile > .profileAndInformation > .profile > .img_modify {
-    /*width: 20rem;*/
-    /*height: 20rem;*/
-    /*background-color: #96f2d7;*/
+#mainDiv > .mypage_menu {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#mainDiv > .mypage_menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mainDiv > .mypage_menu > ul > li {
+    width: 100%;
+    height: 2.5rem;
+
+    border: 0.05rem solid;
+    cursor: pointer;
+
+    align-items: center;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+}
+
+#mainDiv > .mypage_menu > ul > li:first-child {
+    border-radius: 0.5rem 0 0 0;
+}
+
+#mainDiv > .mypage_menu > ul > li:last-child {
+    border-radius: 0 0.5rem 0 0;
+}
+
+#mainDiv > .line {
+    width: 100%;
+
+    border-top: 0.25rem solid #96f2d7;
+}
+
+#mainDiv > .board {
+    width: 100%;
+    height: 100%;
 }
