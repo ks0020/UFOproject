@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: center;
 
-    background-image: url("../images/home/basics.png");
+    background-image: url("../../images/home/basics.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -150,6 +150,12 @@
 #mainDiv > .board {
     width: 100%;
     height: 100%;
+    border: 0.0125rem solid;
 
-    padding-top: 3.125rem;
+    margin-top: 3.125rem;
 }
+
+#mainDiv > .board > h2 {
+    margin-left: 2rem;
+}
+

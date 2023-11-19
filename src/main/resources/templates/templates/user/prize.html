@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UFO - 간편한 중고 경매를 찾다</title>
     <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
-    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/mypage_base.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/prize.css}">
     <script defer th:src="@{/scripts/base.js}"></script>
     <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
 </head>
@@ -153,7 +154,21 @@
         </ul>
     </div>
     <div class="board">
-        메뉴별 게시판
+        <h2>내 상점</h2>
+        <div class="post_div">
+            <div class="post">
+                <div class="img_box">
+                    <img th:src="@{/resources/images/home/account.png}" alt="">
+                </div>
+                <div class="post_content">
+                    ㅎㅇㅎㅇ
+                </div>
+                <div class="post_modify">
+                    <input type="button">
+                    <input type="button">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer id="footer">
