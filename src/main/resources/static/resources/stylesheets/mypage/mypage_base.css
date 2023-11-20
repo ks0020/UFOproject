@@ -175,3 +175,10 @@
     margin-left: 2rem;
 }
 
+#mainDiv > .board > .post_div > .post > .post_modify > .modify_btn:hover{
+    background-color: #ADD8E6;
+}
+
+#mainDiv > .board > .post_div > .post > .post_modify > .delete_btn:hover {
+    background-color: #F08080;
+}

@@ -8,6 +8,7 @@
     <title>UFO - 간편한 중고 경매를 찾다</title>
     <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
     <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/mypage_base.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/review.css}">
     <script defer th:src="@{/scripts/base.js}"></script>
     <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
 </head>
@@ -153,7 +154,47 @@
         </ul>
     </div>
     <div class="board">
-        내 상품 후기 게시판
+        <h2>내 상품 후기</h2>
+        <div class="post_div">
+            <div class="post">
+                <div class="img_box">
+                    <img th:src="@{/resources/images/home/account.png}" alt="">
+                </div>
+                <div class="post_content">
+                    <div class="review_title">
+                        <span>제목 쏼라쏼라</span>
+                    </div>
+                    <div class="review_content">
+                        <span>요상품 개쩔어용</span>
+                    </div>
+                </div>
+                <div class="post_modify">
+                    <label class="_object-btn modify_btn">
+                        <input type="button">
+                        <span> 자세히 보기 </span>
+                    </label>
+                </div>
+            </div>
+            <div class="post">
+                <div class="img_box">
+                    <img th:src="@{/resources/images/home/account.png}" alt="">
+                </div>
+                <div class="post_content">
+                    <div class="review_title">
+                        <span>제목 쏼라쏼라</span>
+                    </div>
+                    <div class="review_content">
+                        <span>요상품 개쩔어용</span>
+                    </div>
+                </div>
+                <div class="post_modify">
+                    <label class="_object-btn modify_btn">
+                        <input type="button">
+                        <span> 자세히 보기 </span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer id="footer">

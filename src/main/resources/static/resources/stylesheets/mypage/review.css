@@ -1,0 +1,31 @@
+#mainDiv > .board > .post_div > .post {
+    border: 0.125rem solid #96f2d7;
+    margin-bottom: 0.5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainDiv > .board > .post_div > .post > .img_box > img {
+    width: 10rem;
+    height: 10rem;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > div {
+    margin-bottom: 0.5rem;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > .review_title > span{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > .review_content > span {
+    font-size: 0.875rem;
+}용
