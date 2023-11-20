@@ -1,0 +1,61 @@
+.board > .following_div {
+    border: 0.125rem solid #96f2d7;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.board > .following_div > .following_img {
+    margin-right: 2rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board > .following_div > .following_img > .img_box > img {
+    width: 10rem;
+}
+
+.board > .following_div > .following_img > .nickname_div > span {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.board > .following_div > .recommended {
+    width: 100%;
+    overflow: hidden;
+}
+
+.board > .following_div > .recommended > h3 {
+    margin-right: 0.5rem;
+    border-bottom: 0.5rem solid;
+}
+
+.board > .following_div > .recommended > .recommended_product {
+    display: flex;
+    flex-direction: row;
+}
+
+.board > .following_div > .recommended > .recommended_product > a {
+    width: 10rem;
+    height: 10rem;
+    border: 0.125rem solid;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board > .following_div > .recommended > .recommended_product > a > img{
+    width: 8.5rem;
+}
+
+.board > .following_div > .recommended > .recommended_product > a > span{
+    font-weight: 600;
+}

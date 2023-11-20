@@ -8,6 +8,7 @@
     <title>UFO - 간편한 중고 경매를 찾다</title>
     <link rel="stylesheet" th:href="@{/resources/stylesheets/base.css}">
     <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/mypage_base.css}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/mypage/followingAndFollower.css}">
     <script defer th:src="@{/scripts/base.js}"></script>
     <link rel="icon" th:href="@{/images/favicon.png}" type="image/png">
 </head>
@@ -105,9 +106,9 @@
                     <!--                    <span th:text="${session.user['adress']}"></span>-->
                     <span> 대한민국 어느도 어느시 저런동 이런번지 </span>
                 </div>
-                <div class="modify_btn">
-                    <label class="_object-btn">
-                        <input class="modify_btn info_btn" type="button">
+                <div class="modify_Btn">
+                    <label class="_object-btn modify_btn">
+                        <input class="modify_Btn info_btn" type="button">
                         <span>개인 정보 수정</span>
                     </label>
                     <div class="info_modify modify_page">
@@ -153,7 +154,52 @@
         </ul>
     </div>
     <div class="board">
-        팔로잉 게시판
+        <h2>팔로잉</h2>
+        <div class="following_div">
+            <div class="following_img">
+                <div class="img_box">
+                    <img th:src="@{/images/favicon.png}" alt="">
+                </div>
+                <div class="nickname_div">
+                    <span>닉네임</span>
+                </div>
+                <div>
+                    <lable class="_object-btn delete_btn">
+                        <input type="button">
+                        <span>팔로우 해제</span>
+                    </lable>
+                </div>
+            </div>
+            <div class="recommended">
+                <h3>최신 상품</h3>
+                <div class="recommended_product">
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                    <a href="">
+                        <img th:src="@{/images/favicon.png}" alt="">
+                        <span>상품명</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer id="footer">

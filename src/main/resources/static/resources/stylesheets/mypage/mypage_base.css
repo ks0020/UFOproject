@@ -110,16 +110,16 @@
     justify-content: space-between;
 }
 
-#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn {
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_Btn {
     display: flex;
     justify-content: flex-end;
 }
 
-#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label {
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_Btn > label {
     cursor: pointer;
 }
 
-#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > input {
+#mainDiv > .profile > .profileAndInformation > .info_div > .modify_Btn > label > input {
     display: none;
 }
 
@@ -175,10 +175,10 @@
     margin-left: 2rem;
 }
 
-#mainDiv > .board > .post_div > .post > .post_modify > .modify_btn:hover{
+.modify_btn:hover{
     background-color: #ADD8E6;
 }
 
-#mainDiv > .board > .post_div > .post > .post_modify > .delete_btn:hover {
+.delete_btn:hover {
     background-color: #F08080;
 }
