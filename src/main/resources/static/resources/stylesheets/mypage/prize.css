@@ -1,26 +1,54 @@
 #mainDiv > .board > .post_div > .post {
+    border: 0.125rem solid #96f2d7;
+    margin-bottom: 0.5rem;
+
     align-items: center;
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-}
-#mainDiv > .board > .post_div > .post > .img_box {
-    border: 0.0125rem solid;
 }
 
 #mainDiv > .board > .post_div > .post > .img_box > img {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 #mainDiv > .board > .post_div > .post > .post_content {
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#mainDiv > .board > .post_div > .post > .post_modify {
-    width: 100%;
+#mainDiv > .board > .post_div > .post > .post_content > ul {
+    padding: 0.5rem;
+}
 
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
+#mainDiv > .board > .post_div > .post > .post_content > ul > li {
+    margin-bottom: 0.5rem;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > ul > .post_title > span{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > ul > .post_date > span {
+    font-size: 0.875rem;
+    color: #8990a0;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > ul > .post_price {
+    text-align: end;
+}
+
+#mainDiv > .board > .post_div > .post > .post_content > ul > .post_price > span{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#mainDiv > .board > .post_div > .post > .post_modify > .modify_btn:hover{
+    background-color: #ADD8E6;
+}
+
+#mainDiv > .board > .post_div > .post > .post_modify > .delete_btn:hover {
+    background-color: #F08080;
 }

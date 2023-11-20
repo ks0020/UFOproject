@@ -1,3 +1,24 @@
+._object-btn {
+    width: 9rem;
+    height: 2.625rem;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 0.25rem rgba(255, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 1rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+._object-btn > input {
+    display: none;
+}
+
 .modify_page {
     top: 50%;
     left: 50%;
@@ -53,13 +74,14 @@
     background-size: contain;
 }
 
+#mainDiv > .profile > .profileAndInformation > .profile > label > input {
+    display: none;
+}
+
 #mainDiv > .profile > .profileAndInformation > .profile > div {
     margin-top: 1rem;
 }
 
-#mainDiv > .profile > .profileAndInformation > .profile > label > input {
-    display: none;
-}
 
 #mainDiv > .profile > .profileAndInformation > .profile > label > img {
     cursor: pointer;
@@ -97,15 +119,6 @@
     cursor: pointer;
 }
 
-#mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > span {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0.125rem solid #96f2d7;
-    border-radius: 0.25rem;
-    padding: 0.6rem 1.5rem;
-    text-decoration-color: #96f2d7;
-
-}
-
 #mainDiv > .profile > .profileAndInformation > .info_div > .modify_btn > label > input {
     display: none;
 }
@@ -126,7 +139,7 @@
     width: 100%;
     height: 2.5rem;
 
-    outline: 0.125rem solid;
+    border: 0.125rem solid;
     cursor: pointer;
 
     align-items: center;
@@ -135,11 +148,15 @@
 }
 
 #mainDiv > .mypage_menu > ul > li:first-child {
-    border-radius: 0.5rem 0 0 0;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 #mainDiv > .mypage_menu > ul > li:last-child {
-    border-radius: 0 0.5rem 0 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#mainDiv > .mypage_menu > ul > li > a {
+    font-size: 1.25rem;
 }
 
 #mainDiv > .mypage_menu > ul > li > a > span {
@@ -150,7 +167,6 @@
 #mainDiv > .board {
     width: 100%;
     height: 100%;
-    border: 0.0125rem solid;
 
     margin-top: 3.125rem;
 }

@@ -107,7 +107,7 @@
                     <span> 대한민국 어느도 어느시 저런동 이런번지 </span>
                 </div>
                 <div class="modify_btn">
-                    <label>
+                    <label class="_object-btn">
                         <input class="modify_btn info_btn" type="button">
                         <span>개인 정보 수정</span>
                     </label>
@@ -154,18 +154,62 @@
         </ul>
     </div>
     <div class="board">
-        <h2>내 상점</h2>
+        <h2>내 상품</h2>
         <div class="post_div">
             <div class="post">
                 <div class="img_box">
                     <img th:src="@{/resources/images/home/account.png}" alt="">
                 </div>
                 <div class="post_content">
-                    ㅎㅇㅎㅇ
+                    <ul>
+                        <li class="post_title">
+                            <span>제목 쏼라쏼라</span>
+                        </li>
+                        <li class="post_date">
+                            <span>작성일 대충 언제</span>
+                        </li>
+                        <li class="post_price">
+                            <span>가격 얼마</span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="post_modify">
-                    <input type="button">
-                    <input type="button">
+                    <label class="_object-btn modify_btn">
+                        <input type="button">
+                        <span>수정하기</span>
+                    </label>
+                    <label class="_object-btn delete_btn">
+                        <input type="button">
+                        <span>삭제하기</span>
+                    </label>
+                </div>
+            </div>
+            <div class="post">
+                <div class="img_box">
+                    <img th:src="@{/resources/images/home/account.png}" alt="">
+                </div>
+                <div class="post_content">
+                    <ul>
+                        <li class="post_title">
+                            <span>제목 쏼라쏼라</span>
+                        </li>
+                        <li class="post_date">
+                            <span>작성일 대충 언제</span>
+                        </li>
+                        <li class="post_price">
+                            <span>가격 얼마</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post_modify">
+                    <label class="_object-btn modify_btn">
+                        <input type="button">
+                        <span>수정하기</span>
+                    </label>
+                    <label class="_object-btn delete_btn">
+                        <input type="button">
+                        <span>삭제하기</span>
+                    </label>
                 </div>
             </div>
         </div>

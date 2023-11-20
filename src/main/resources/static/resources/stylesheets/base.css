@@ -236,8 +236,8 @@ body::-webkit-scrollbar {
 }
 
 #footer > .members > .sub_logo {
-    height: 10rem;
-    max-height: 100%;
+    width: 10rem;
+    max-width: 100%;
 
     align-items: center;
     display: flex;
@@ -246,12 +246,12 @@ body::-webkit-scrollbar {
 }
 
 #footer > .members > .sub_logo > img {
-    height: 10rem;
+    width: 10rem;
+    max-width: 100%;
 }
 
 #footer > .members > .sub_logo > span {
     font-size: 1.5rem;
-
 }
 
 #footer > .members > div {
